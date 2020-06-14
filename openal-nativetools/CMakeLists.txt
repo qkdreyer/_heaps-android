@@ -1307,8 +1307,8 @@ ADD_CUSTOM_TARGET(native-tools
 
 ]]
 
-file(COPY ${OpenAL_SOURCE_DIR}/../openal-nativetools/bin2h.exe DESTINATION ${NATIVE_BIN_DIR})
-file(COPY ${OpenAL_SOURCE_DIR}/../openal-nativetools/bsincgen.exe DESTINATION ${NATIVE_BIN_DIR})
+file(COPY ${OpenAL_SOURCE_DIR}/../openal-nativetools/bin2h DESTINATION ${NATIVE_BIN_DIR})
+file(COPY ${OpenAL_SOURCE_DIR}/../openal-nativetools/bsincgen DESTINATION ${NATIVE_BIN_DIR})
 
 option(ALSOFT_EMBED_HRTF_DATA "Embed the HRTF data files (increases library footprint)" ON)
 if(ALSOFT_EMBED_HRTF_DATA)
