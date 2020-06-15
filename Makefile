@@ -6,7 +6,8 @@ init:
 	brew install haxe
 	brew bundle install --file hashlink/Brewfile --no-lock
 	haxelib setup /usr/local/lib/haxe/lib
-	ln -s /Applications/Android\ Studio.app/Contents/plugins/android/lib/templates/gradle/wrapper/gradlew /usr/local/bin
+	brew cask install android-studio
+	ln -sf /Applications/Android\ Studio.app/Contents/plugins/android/lib/templates/gradle/wrapper/gradlew /usr/local/bin
 
 build:
 	gradlew build -p heaps-android-app
