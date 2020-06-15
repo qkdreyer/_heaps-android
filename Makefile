@@ -13,7 +13,7 @@ build:
 	gradlew build -p heaps-android-app
 
 install:
-	adb install heaps-android-app/heapsapp/build/outputs/game.apk
+	adb install heaps-android-app/heapsapp/build/outputs/apk/debug/heapsapp-debug.apk
 
 clean:
 	gradlew clean -p heaps-android-app
