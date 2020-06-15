@@ -3,7 +3,6 @@
 all: build install
 
 init:
-	git submodule update --remote --depth 1 --init --recursive
 	brew install haxe
 	brew bundle install --file hashlink/Brewfile --no-lock
 	haxelib setup /usr/local/lib/haxe/lib
