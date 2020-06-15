@@ -5,8 +5,12 @@ all: build install
 init:
 	brew install haxe
 	brew bundle install --file hashlink/Brewfile --no-lock
+	make -C hashlink
+	make install -C hashlink
 	haxelib setup /usr/local/lib/haxe/lib
 	brew cask install android-studio
+
+	# Gradlew
 	ln -sf /Applications/Android\ Studio.app/Contents/plugins/android/lib/templates/gradle/wrapper/gradlew /usr/local/bin
 	chmod u+x /usr/local/bin/gradlew
 
