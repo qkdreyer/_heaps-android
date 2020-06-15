@@ -13,11 +13,11 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
+    - run: make init
+    - run: make heaps-world
+    - run: make build
     - name: "#️⃣ Generate Build Number"
       id: buildnumber
       uses: einaregilsson/build-number@v2
       with:
         token: ${{ secrets.github_token }}
-    - run: make init
-    - run: make out
-    - run: make build
